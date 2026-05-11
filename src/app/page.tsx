@@ -1,6 +1,5 @@
 import React from 'react';
 import { Hammer, Wallet, Terminal, Lock } from 'lucide-react';
-
 export default function MaintenancePage() {
 
   return (
