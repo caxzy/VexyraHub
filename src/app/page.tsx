@@ -21,7 +21,7 @@ export default function MaintenancePage() {
           </h1>
           
           <p className="text-sm md:text-base mb-12 leading-relaxed max-w-md">
-        LyzernHub is currently under maintenance; we're learning the basics and trying to come up with a name :)
+        LyzernHub is currently under maintenance; we're learning the basics!
           </p>
 
           <div className="flex gap-4">
