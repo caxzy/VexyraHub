@@ -1,33 +1,25 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import type { Metadata } from 'next';
+import './globals.css';
+import Navbar from './components/Navbar';
 
 export const metadata: Metadata = {
-  title: "LyzernHub - Your Megathread for optimization.",
-  description: "Soon...",
+  title: 'LyzernHub - Your Megthread for optimization.',
+  description: 'dev_build-TestDescription.',
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en">
+      <body className="bg-[#060606] text-white antialiased min-h-screen relative font-sans">
+        <Navbar />
+        <main className="pt-28 pb-10 px-6">
+          {children}
+        </main>
+      </body>
     </html>
   );
 }
