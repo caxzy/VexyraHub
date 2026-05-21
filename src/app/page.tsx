@@ -33,7 +33,7 @@ export default function MaintenancePage() {
             </a>
             <div className="flex items-center gap-2 px-4 py-2 text-xs text-slate-700">
               <Terminal size={14} />
-              <span>DEVBUILD:0.053</span>
+              <span>DEVBUILD:0.054</span>
             </div>
           </div>
         </div>
